@@ -23,12 +23,12 @@ set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -Wall -Wextra")
 set(CMAKE_C_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -Wall -Wextra")
 set(CMAKE_CXX_FLAGS_RELEASE "-O3")
 
-set(EXAMPLE1_SRC_LIST ${COMMON_SRC_LIST} example1.c)
-set(EXAMPLE2_SRC_LIST ${COMMON_SRC_LIST} example2.c)
-set(EXAMPLE3_SRC_LIST ${COMMON_SRC_LIST} example3.c)
-set(EXAMPLE4_SRC_LIST ${COMMON_SRC_LIST} example4.c)
-set(EXAMPLE5_SRC_LIST ${COMMON_SRC_LIST} example5.c)
-set(EXAMPLE6_SRC_LIST ${COMMON_SRC_LIST} example6.c)
+set(EXAMPLE1_SRC_LIST ${COMMON_SRC_LIST} examples/example1.c)
+set(EXAMPLE2_SRC_LIST ${COMMON_SRC_LIST} examples/example2.c)
+set(EXAMPLE3_SRC_LIST ${COMMON_SRC_LIST} examples/example3.c)
+set(EXAMPLE4_SRC_LIST ${COMMON_SRC_LIST} examples/example4.c)
+set(EXAMPLE5_SRC_LIST ${COMMON_SRC_LIST} examples/example5.c)
+set(EXAMPLE6_SRC_LIST ${COMMON_SRC_LIST} examples/example6.c)
 set(MINIZ_TESTER_SRC_LIST ${COMMON_SRC_LIST} miniz_tester.cpp miniz.c timer.cpp timer.h)
 
 # -fno-strict-aliasing is probably not required to build miniz.c (I've been testing with it not defined for a while), but it's what I'm used to from working with Visual Studio.
